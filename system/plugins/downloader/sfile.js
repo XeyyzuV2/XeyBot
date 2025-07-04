@@ -22,7 +22,7 @@ class Command {
         if (!data.metadata) throw "*⁉️ Media tidak ditemukan?*";
         let caption = "*SfileMobi - Downloader 📩*\n";
         caption += Object.entries(data.metadata).map(([a, b]) => `- ${a.capitalize()}: ${b}`).join("\n");
-        caption += "\n\n*✅ Media Berhasil Diunduh !*\nNikmati kemudahan saat download apapun hanya di NekoBot!";
+        caption += "\n\n*✅ Media Berhasil Diunduh !*\nNikmati kemudahan saat download apapun hanya di xey!";
         sock.sendFile(m.cht, data.download, data.metadata.filename, caption, m, {
             mimetype: data.metadata.mimetype
         });

@@ -1,7 +1,7 @@
 {
-  "name": "nekoBot",
+  "name": "xeyBot",
   "version": "1.7.0",
-  "description": "- WhatsApp bot using Library Baileys",
+  "description": "- WhatsApp bot xey using Library Baileys",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -11,17 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AxellNetwork/nekoBot.git"
+    "url": "git+https://github.com/xeyyzuv2/xeyyzuv2.git"
   },
   "keywords": [
     "botwa"
   ],
-  "author": "Axel_Team",
+  "author": "xey",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AxellNetwork/nekoBot/issues"
+    "url": "https://github.com/xeyyzuv2/xeyyzuv2/issues"
   },
-  "homepage": "https://github.com/AxellNetwork/nekoBot#readme",
+  "homepage": "https://github.com/xeyyzuv2/xeyyzuv2#readme",
   "dependencies": {
     "acrcloud": "^1.4.0",
     "async-lock": "^1.4.1",

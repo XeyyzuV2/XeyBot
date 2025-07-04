@@ -11,7 +11,7 @@ module.exports = {
   settings: {
     owner: true,
   },
-  description: "Backup script bot Neko",
+  description: "Backup script bot xey",
   async run(m, { sock, text }) {
     try {
       let zipFileName = `Backup.zip`;

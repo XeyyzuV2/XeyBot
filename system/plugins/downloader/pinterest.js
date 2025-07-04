@@ -1,4 +1,4 @@
-let neko = async (m, { sock, Func, Scraper, text, Uploader }) => {
+let xeyHandler = async (m, { sock, Func, Scraper, text, Uploader }) => {
   if (!text) throw "> *❌ Masukkan query atau link dari Pinterest!*";
 
   if (Func.isUrl(text)) {
@@ -28,13 +28,13 @@ let neko = async (m, { sock, Func, Scraper, text, Uploader }) => {
   }
 };
 
-neko.command = "pinterest";
-neko.alias = ["pin", "pindl"];
-neko.category = ["downloader", "tools"];
-neko.settings = {
+xeyHandler.command = "pinterest";
+xeyHandler.alias = ["pin", "pindl"];
+xeyHandler.category = ["downloader", "tools"];
+xeyHandler.settings = {
   limit: true,
 };
-neko.description = "🔎 Mencari atau mengunduh media dari Pinterest!";
-neko.loading = true;
+xeyHandler.description = "🔎 Mencari atau mengunduh media dari Pinterest!";
+xeyHandler.loading = true;
 
-module.exports = neko;
+module.exports = xeyHandler;

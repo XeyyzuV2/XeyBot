@@ -1,4 +1,4 @@
-let neko = async (
+let xeyHandler = async (
   m,
   { sock, Func, Scraper, Uploader, store, text, config },
 ) => {
@@ -93,13 +93,13 @@ let neko = async (
   });
 };
 
-neko.command = "tiktok";
-neko.alias = ["tt", "ttdl", "tiktokdl"];
-neko.category = ["downloader"];
-neko.settings = {
+xeyHandler.command = "tiktok";
+xeyHandler.alias = ["tt", "ttdl", "tiktokdl"];
+xeyHandler.category = ["downloader"];
+xeyHandler.settings = {
   limit: true,
 };
-neko.description = "📥 Download video atau slide dari TikTok.";
-neko.loading = true;
+xeyHandler.description = "📥 Download video atau slide dari TikTok.";
+xeyHandler.loading = true;
 
-module.exports = neko;
+module.exports = xeyHandler;

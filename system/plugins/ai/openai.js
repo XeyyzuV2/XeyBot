@@ -15,7 +15,7 @@ module.exports = {
         {
           role: "system",
           content:
-            "Kamu sekarang adalah NekoBot, Bot assisten yang diciptakan oleh Axell_Company",
+            "Kamu sekarang adalah xey, Bot assisten yang diciptakan oleh xey",
         },
       ],
       "gpt-3.5-turbo",

@@ -1,15 +1,15 @@
 ![Logo](https://files.catbox.moe/obf6o0.jpg)
 
-**😼 NekoBot | 1.7.0** | ***create by AxellNetwork***
+**😼 xey | 1.7.0** | ***create by xey***
 
 
 ```> Simple WhatsApp bot Using Library Baileys```
 
 ```javascript
 {
-  message: Message { conversation: '>_ Welcome to NekoBot' },
+  message: Message { conversation: '>_ Welcome to xey' },
   type: 'conversation',
-  msg: '>_ Welcome to NekoBot',
+  msg: '>_ Welcome to xey',
   isMedia: false,
   key: {
     remoteJid: '6285165556936@s.whatsapp.net',
@@ -26,11 +26,11 @@
   participant: '6285165556936@s.whatsapp.net',
   sender: '6285165556936@s.whatsapp.net',
   mentions: [],
-  body: '>_ Welcome to NekoBot',
+  body: '>_ Welcome to xey',
   prefix: '',
   command: '>_',
-  args: [ 'Welcome', 'to', 'NekoBot' ],
-  text: 'Welcome to NekoBot',
+  args: [ 'Welcome', 'to', 'xey' ],
+  text: 'Welcome to xey',
   isOwner: true,
   download: [AsyncFunction (anonymous)]
 }
@@ -42,11 +42,11 @@ const fs = require('node:fs');
 
 const config = {
     owner: ["6285215909004"],
-    name: "- nekoBot - Simple WhatsApp bot",
+    name: "- xey - Simple WhatsApp bot",
     sessions: "sessions",
     sticker: {
       packname: "Made by ",
-      author: "nekoBot"
+      author: "xey"
     },
    messages: {
       wait: "*( Loading )* Tunggu Sebentar...",
@@ -54,7 +54,7 @@ const config = {
       premium: "*( Denied )* Fitur ini khusus user premium",
       group: "*( Denied )* Fitur ini khusus group",
    },
-   database: "neko-db",
+   database: "xey-db",
    tz: "Asia/Jakarta"
 }
 
@@ -66,8 +66,8 @@ module.exports = config
 
 
 ```bash
-$ git clone https://github.com/AxellNetwork/NekoBot
-$ cd nekoBot
+$ git clone https://github.com/xeyyzuv2/xeyyzuv2.git
+$ cd xeyBot
 $ npm install
 $ npm start
 ```

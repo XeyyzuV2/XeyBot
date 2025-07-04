@@ -7,8 +7,16 @@ module.exports = {
   description: "📜 Dapatkan Script Bot Secara Gratis",
   async run(m, { sock, Func }) {
     let data = await axios
-      .get("https://api.github.com/repos/AxellNetwork/NekoBot")
-      .then((a) => a.data);
+      .get("https://api.github.com/repos/xeyyzuv2/xeyyzuv2")
+      .then((a) => a.data)
+      .catch(e => {
+          console.error("Error fetching repo data:", e.message);
+          return null;
+      });
+
+    if (!data) {
+        return m.reply("Tidak dapat mengambil informasi script. Pastikan repositori GitHub valid dan dapat diakses.");
+    }
 
     let cap = "*– 乂 Informasi - Script Bot*\n\n";
     cap += `> 🧩 *Nama:* ${data.name}\n`;
