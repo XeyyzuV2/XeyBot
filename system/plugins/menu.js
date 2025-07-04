@@ -81,18 +81,24 @@ https://whatsapp.com/channel/0029Vb0YWvYJ3jusF2nk9U1P
 > - 🕰️ Waktu Aktif: ${Func.toDate(process.uptime() * 1000)}
 > - 🔑 Prefix: [ ${m.prefix} ]
 > - ⚡ Total perintah: ${cmd + alias + matches.length}
-
-  
-🛠️ *msnu – OTHER* 
-${matches.map((a, i) => `> *(${i + 1})* ${m.prefix + a}`).join("\n")}
-─────────────────────────
 `;
 
+      // Format baru untuk matches (perintah dari case.js)
+      if (matches && matches.length > 0) {
+        caption += `\n┌[ *<⚙️ PERINTAH LAIN>* ]\n`;
+        matches.forEach(commandName => {
+          caption += `│⇨ ${m.prefix}${commandName}\n`;
+        });
+        caption += `└\n─────────────────────────\n`;
+      }
+
+      // Format baru untuk setiap kategori dari plugin
       Object.entries(menu).forEach(([tag, commands]) => {
-        caption += `\n🛠️ *Menu – ${tag.toUpperCase()}* 
-${commands.command.map((command, index) => `> *(${index + 1})* ${m.prefix + command.name} ${command.settings?.premium ? "🥇" : command.settings?.limit ? "🥈" : ""}`).join("\n")}
-─────────────────────────
-`;
+        caption += `\n┌[ *<⚙️ ${tag.toUpperCase()}>* ]\n`;
+        commands.command.forEach((command, index) => {
+          caption += `│⇨ ${m.prefix}${command.name} ${command.settings?.premium ? "🥇" : command.settings?.limit ? "🥈" : ""}\n`;
+        });
+        caption += `└\n─────────────────────────\n`;
       });
 
       caption += footer;
@@ -126,17 +132,14 @@ ${commands.command.map((command, index) => `> *(${index + 1})* ${m.prefix + comm
 > - 🕰️ Waktu Aktif: ${Func.toDate(process.uptime() * 1000)}
 > - 🔑 Prefix: [ ${m.prefix} ]
 > - ⚡ Total perintah: ${cmd + alias + matches.length}
-
-─────────────────────────
-🛠️ *Menu – ${text.toUpperCase()}*
-${list.command
-  .map(
-    (a, i) =>
-      `> *(${i + 1})* ${m.prefix + a.name} ${a.settings?.premium ? "🥇" : a.settings?.limit ? "🥈" : ""}`,
-  )
-  .join("\n")}
-─────────────────────────
 `;
+
+      // Format baru untuk kategori yang dipilih
+      caption += `\n┌[ *<⚙️ ${text.toUpperCase()}>* ]\n`;
+      list.command.forEach((command, index) => {
+        caption += `│⇨ ${m.prefix}${command.name} ${command.settings?.premium ? "🥇" : command.settings?.limit ? "🥈" : ""}\n`;
+      });
+      caption += `└\n─────────────────────────\n`;
 
       caption += footer;
 
