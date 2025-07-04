@@ -2,12 +2,12 @@ const fs = require("node:fs");
 
 const config = {
   owner: ["6282114275683", "6281910094713"],
-  name: "- NekoBot - Simple WhatsApp bot",
+  name: "- xey - Simple WhatsApp bot",
   sessions: "sessions",
   prefix: [".", "?", "!"], // Tambahkan prefix sesuai kebutuhan
   sticker: {
-    packname: "✨ NekoPack ✨", 
-    author: "🐾 AxellNetwork 🐾", 
+    packname: "✨ xeyPack ✨",
+    author: "xey",
   },
   id: {
     newsletter: "120363388655497053@newsletter", 
@@ -19,9 +19,9 @@ const config = {
     premium: "> 🥇 *Upgrade ke Premium* untuk mendapatkan akses ke fitur eksklusif, murah dan cepat! Hubungi admin untuk info lebih lanjut.", 
     group: "> 👥 *Fitur ini hanya tersedia di grup*... Pastikan Anda berada di grup WhatsApp untuk mengakses fitur ini.",
     botAdmin: "> ⚠️ *Anda harus menjadi admin grup* untuk menggunakan fitur ini, karena bot memerlukan hak akses admin.", 
-    grootbotbup: "> 🛠️ *Jadikan NekoBot sebagai admin* grup untuk menggunakan fitur ini. Pastikan Anda memberikan hak admin kepada bot.", 
+    grootbotbup: "> 🛠️ *Jadikan xey sebagai admin* grup untuk menggunakan fitur ini. Pastikan Anda memberikan hak admin kepada bot.",
   },
-  database: "neko-db",
+  database: "xey-db",
   tz: "Asia/Jakarta",
 };
 

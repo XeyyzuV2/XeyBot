@@ -88,7 +88,7 @@
   
   console.log(chalk.green.bold(`
     --------------------------------------
-    ☘️ Selamat datang di NekoBot
+    ☘️ Selamat datang di xey
   terimakasih telah menggunakan script ini 👍
     --------------------------------------
   `));
@@ -100,7 +100,7 @@
 
   console.log(chalk.blue.bold("\n🤖 Info Bot:"));
   console.log(chalk.white.bold("  | GitHub: ") + chalk.cyan.bold("https://github.com/AxellNetwork"));
-  console.log(chalk.white.bold("  | Developer: ") + chalk.green.bold("AxellNetwork"));
+  console.log(chalk.white.bold("  | Developer: ") + chalk.green.bold("xey"));
   console.log(chalk.white.bold("  | Status Server: ") + chalk.green.bold("Online"));
   console.log(chalk.white.bold("  | Versi: ") + chalk.magenta.bold(pkg.version));
   console.log(chalk.white.bold("  | Versi Node.js: ") + chalk.magenta.bold(process.version));
@@ -258,7 +258,7 @@
         return msg;
       }
       return {
-        conversation: "NekoBot",
+        conversation: "xey",
       };
     }
 

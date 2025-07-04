@@ -48,8 +48,8 @@ module.exports = {
     let premium = db.list().user[m.sender].premium.status;
     let limit = db.list().user[m.sender].limit;
 
-    const header = `☘️ *N E K O – B O T*
-👋 Hai nama saya NekoBot saya adalah asisten bot WhatsApp 
+    const header = `☘️ *XeyBot*
+👋 Hai nama saya xey saya adalah asisten bot WhatsApp
 yang akan membantu anda dengan fitur yang sediakan !
 ─────────────────────────
         `;
@@ -57,9 +57,9 @@ yang akan membantu anda dengan fitur yang sediakan !
     const footer = `
 📢 *Jika Anda menemui masalah*
 *hubungi developer bot.*
-💻 *Script bot:* https://github.com/AxellNetwork/NekoBot
+💻 *Script bot:* https://github.com/xeyyzuv2/xeyyzuv2
 🤖 *Didukung oleh WhatsApp*
-🌐 *Saluran WhatsApp NekoBot :*
+🌐 *Saluran WhatsApp xey :*
 https://whatsapp.com/channel/0029Vb0YWvYJ3jusF2nk9U1P
 
 > 💬 *Fitur Limit*: 🥈
@@ -102,7 +102,7 @@ ${commands.command.map((command, index) => `> *(${index + 1})* ${m.prefix + comm
         contextInfo: {
           mentionedJid: sock.parseMention(caption),
           externalAdReply: {
-            title: "© NekoBot | Playground",
+            title: "© xey | Playground",
             body: "👨‍💻 Bot WhatsApp - Simple",
             mediaType: 1,
             sourceUrl: "https://whatsapp.com/channel/0029Vb0YWvYJ3jusF2nk9U1P",
@@ -145,7 +145,7 @@ ${list.command
         contextInfo: {
           mentionedJid: sock.parseMention(caption),
           externalAdReply: {
-            title: "© NekoBot | Playground",
+            title: "© xey | Playground",
             body: "👨‍💻 Bot WhatsApp - Simple",
             mediaType: 1,
             sourceUrl: "https://whatsapp.com/channel/0029Vb0YWvYJ3jusF2nk9U1P",
@@ -185,7 +185,7 @@ ${list.map((a) => `> *(${a})* ${m.prefix}menu ${a}`).join("\n")}
         contextInfo: {
           mentionedJid: sock.parseMention(caption),
           externalAdReply: {
-            title: "© NekoBot | Playground",
+            title: "© xey | Playground",
             body: "👨‍💻 Bot WhatsApp - Simple",
             mediaType: 1,
             sourceUrl: "https://whatsapp.com/channel/0029Vb0YWvYJ3jusF2nk9U1P",
